@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Equalgallery</title>
+		<meta http-equiv="content-language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/flexslider.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+	</head>
+<body>
+
+<div class="container-fluid imagely">
+    <div id="imagelySlider" class="container-slider flexslider">
+        <ul class="slides">
+           <li><img src="uploads/01.jpg" alt="" data-url="https://www.youtube.com/"></li>
+           <li><img src="uploads/02.jpg" alt="" data-url="uploads/02.jpg"></li>
+           <li><img src="uploads/03.jpg" alt="" data-url="uploads/03.jpg"></li>
+           <li><img src="uploads/04.jpg" alt="" data-url="uploads/04.jpg"></li>
+           <li><img src="uploads/05.jpg" alt="" data-url="uploads/05.jpg"></li>
+           <li><img src="uploads/06.jpg" alt="" data-url="uploads/06.jpg"></li>
+           <li><img src="uploads/07.jpg" alt="" data-url="uploads/07.jpg"></li>
+           <li><img src="uploads/08.jpg" alt="" data-url="uploads/08.jpg"></li>
+           <li><img src="uploads/09.jpg" alt="" data-url="uploads/09.jpg"></li>
+           <li><img src="uploads/10.jpg" alt="" data-url="uploads/10.jpg"></li>
+           <li><img src="uploads/11.jpg" alt="" data-url="uploads/11.jpg"></li>
+           <li><img src="uploads/12.jpg" alt="" data-url="uploads/12.jpg"></li>
+           <li><img src="uploads/13.jpg" alt="" data-url="uploads/13.jpg"></li>
+           <li><img src="uploads/14.jpg" alt="" data-url="uploads/14.jpg"></li>
+           <li><img src="uploads/15.jpg" alt="" data-url="uploads/15.jpg"></li>
+        </ul>
+    </div>
+    <div class="container-thumbs">
+        <div id="imagelyСarousel" class="flexslider">
+            <ul class="slides slides-thumbs">
+                <li><img src="uploads/thumbs/01.jpg" /></li>
+                <li><img src="uploads/thumbs/02.jpg" /></li>
+                <li><img src="uploads/thumbs/03.jpg" /></li>
+                <li><img src="uploads/thumbs/04.jpg" /></li>
+                <li><img src="uploads/thumbs/05.jpg" /></li>
+                <li><img src="uploads/thumbs/06.jpg" /></li>
+                <li><img src="uploads/thumbs/07.jpg" /></li>
+                <li><img src="uploads/thumbs/08.jpg" /></li>
+                <li><img src="uploads/thumbs/09.jpg" /></li>
+                <li><img src="uploads/thumbs/10.jpg" /></li>
+                <li><img src="uploads/thumbs/11.jpg" /></li>
+                <li><img src="uploads/thumbs/12.jpg" /></li>
+                <li><img src="uploads/thumbs/13.jpg" /></li>
+                <li><img src="uploads/thumbs/14.jpg" /></li>
+                <li><img src="uploads/thumbs/15.jpg" /></li>
+            </ul>
+        </div>
+        <div class="toolbar">
+            <ul>
+                <li class="download open-modal" data-modal="modal-download"></li>
+                <li class="comments open-modal" data-modal="modal-comments" title="Add a comment"></li>
+                <li class="autoplay" title="Autoplay slider"></li>
+            </ul>
+        </div> 
+    </div>
+    <div class="modal modal-comments">
+        <h3>Comment</h3> 
+        <form action="#">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="name" class="for-input">Name *</label>
+            <input type="text" id="name" name="name">
+            <label for="email" class="for-input">Email *</label>
+            <input type="text" id="email" name="email" placeholder="Your email will not be pubished">
+            <label for="website" class="for-input">Website *</label>
+            <input type="text" id="website" name="website">
+            <button type="submit">Post Comment</button>
+        </form>
+    </div>    
+    <div class="modal modal-download">
+        <h3>Download Image</h3> 
+        <ul class="table table-header">
+            <li>Standard License</li>
+            <li>RF Prints</li>
+            <li>Products for resale</li>
+        </ul>
+        <ul class="table table-item">
+            <li>
+                <input type="radio" class="table-item-radio" id="ti-radio-1">
+                <label for="ti-radio-1" class="label-radio">
+                    <div class="table-item-sizeicon">S</div>
+                    <div class="table-item-size">550×400</div>
+                </label>       
+            </li>
+            <li>
+                <div class="table-item-size">5 MB</div>  
+            </li>
+            <li>
+                <div class="icon icon-cart"></div>
+                <div class="icon icon-load"></div>
+            </li>
+        </ul>
+        <ul class="table table-item">
+            <li>
+                <input type="radio" class="table-item-radio" id="ti-radio-2">
+                <label for="ti-radio-2" class="label-radio">
+                    <div class="table-item-sizeicon">M</div>
+                    <div class="table-item-size">550×400</div>
+                </label>       
+            </li>
+            <li>
+                <div class="table-item-size">10 MB</div>  
+            </li>
+            <li>
+                <div class="icon icon-cart"></div>
+                <div class="icon icon-load"></div>
+            </li>
+        </ul>
+        <ul class="table table-commercial">
+            <li>For Web or for Print Use</li>
+        </ul>
+        <ul class="table table-item">
+            <li>
+                <input type="radio" class="table-item-radio" id="ti-radio-3">
+                <label for="ti-radio-3" class="label-radio">
+                    <div class="table-item-sizeicon">XS</div>
+                    <div class="table-item-size">5500×4800</div>
+                </label>       
+            </li>
+            <li>
+                <div class="table-item-size">8″×5″</div>  
+            </li>
+            <li>
+                <div class="icon icon-cart"></div>
+                <div class="icon icon-load"></div>
+            </li>
+        </ul>
+        <ul class="table table-item">
+            <li>
+                <input type="radio" class="table-item-radio" id="ti-radio-4">
+                <label for="ti-radio-4" class="label-radio">
+                    <div class="table-item-sizeicon">L</div>
+                    <div class="table-item-size">5500×4800</div>
+                </label>       
+            </li>
+            <li>
+                <div class="table-item-size">12″×8″</div>  
+            </li>
+            <li>
+                <div class="icon icon-cart"></div>
+                <div class="icon icon-load"></div>
+            </li>
+        </ul>
+        <ul class="table table-item">
+            <li>
+                <input type="radio" class="table-item-radio" id="ti-radio-5">
+                <label for="ti-radio-5" class="label-radio">
+                    <div class="table-item-sizeicon">Xl</div>
+                    <div class="table-item-size">5500×4800</div>
+                </label>       
+            </li>
+            <li>
+                <div class="table-item-size">16″×9″</div>  
+            </li>
+            <li>
+                <div class="icon icon-cart"></div>
+                <div class="icon icon-load"></div>
+            </li>
+        </ul>
+        <ul class="table table-item table-result">
+            <li>
+                <div class="table-item-sizeicon">XL</div>
+                <div class="table-item-size">Exclusive Use</div>                
+            </li>
+            <li>
+                <div class="table-item-size">$2,400</div>  
+            </li>
+            <li>
+                <div class="icon icon-cart"></div>
+                <div class="icon icon-load"></div>
+            </li>
+        </ul>
+        <button type="submit" class="btn-yellow">Download</button>
+    </div>   
+</div>
+
+<script src="libs/jquery.js"></script>
+<script src="libs/jquery.flexslider.js"></script>
+<script src="libs/common.js"></script>
+
+</body>
+</html>

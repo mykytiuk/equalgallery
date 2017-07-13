@@ -1,0 +1,116 @@
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  display: block;
+}
+.flexslider .slides:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+.flexslider {
+  margin: 0 0 0px;
+  position: relative;
+  zoom: 1;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.flex-direction-nav { *height: 0; }
+.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 20px;
+    height: 32px;
+    margin: -16px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    outline: none;
+}
+.flex-direction-nav a:before {
+    display: block;
+    width: 20px;
+    height: 32px;
+    background: url('../img/arrow.svg');
+    -webkit-background-size: 40px 32px;
+    background-size: 40px 32px;
+    content: "";
+}
+.flex-direction-nav a.flex-next:before {
+    background-position: 20px 0px;
+}
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; }
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 0.8;
+    left: 16px;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 0.8;
+    right: 16px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover,
+.flexslider:hover .flex-direction-nav .flex-next:hover { opacity: 1; }
+
+
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 16px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 16px;
+  }
+}
